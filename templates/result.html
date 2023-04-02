@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+  <h1 class="text-center mb-4">Results</h1>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Detected Disease:</h2>
+          <p class="card-text">{{ disease_name }}</p>
+          <a href="https://www.google.com/search?q={{ disease_name }}+control" target="_blank" class="btn btn-primary">Find Control Methods</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="mb-4">Welcome to Skin Disease Detection</h1>
+  <form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="image">Upload an image</label>
+      <input type="file" name="file" id="file" class="form-control-file">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
